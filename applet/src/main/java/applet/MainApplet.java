@@ -37,10 +37,12 @@ public class MainApplet extends Applet implements MultiSelectable
 	}
 
 	public boolean select(boolean b) {
+		// This is called when the applet is selected by the APDU
 		return true;
 	}
 
 	public void deselect(boolean b) {
-
+		//This is called when applet is deselected by the APDU, any required cleanup
+		// is perfoemed here
 	}
 }
